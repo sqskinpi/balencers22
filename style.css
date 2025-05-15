@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Gothic+Expanded+One&display=swap');
+
+body{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 700px;
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    border-bottom: 2px solid black;
+
+
+
+}
+@media(max-width: 500px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        
+        height: 70px;
+        font-size: 30px;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        border-bottom: 2px solid black;
+    }
+    main {
+        flex-direction: column;
+
+    }
+    .item{
+        width: 100%;
+    }
+
+    
+}
+.cursor{
+    cursor: pointer;
+}
+.menubutton{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    box-shadow: 0 0 100px 10px white;
+    width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    height: 100%;
+
+}
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.img{
+  
+    overflow: hidden;
+    filter: blur(5px);
+    
+}
+
+
+.item{
+    width: 33%;
+    border: 1px solid black;
+    background: rgba(160, 157, 214, .2);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    box-shadow: 0 0 100px 10px white;
+    width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    background-color: rgb(210,210,210);
+    height: 200px;
+    flex-direction: column;
+    
+    
+}
+.itemfoot{
+    width: 50%;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.itemfoot a{
+    all:unset;
+    padding-top: 10px;
+    font-weight: 500;
+}
+#catalog{
+    position: fixed; 
+    width: 200px; 
+    height: 60px;
+     background-color: white; 
+     border: 1px solid black; 
+     font-size: 20px;
+    justify-content: center ; 
+    display: flex; 
+    align-self: center; 
+    flex-direction: row;   
+    margin-left: 44%;
+
+}
+.burger{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    z-index: 2000;
+    background-color: white;
+}
+.menu {
+    width: calc(100% - 4em);
+    height: 2em;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em;
+}
+
+.menu_item {
+    margin-right: 1em;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+
+.inner {
+    padding: 1em 0 0 0;
+    width: 60%;
+    height: auto;
+}
+
+@media (max-width: 650px) {
+    #catalog{
+        position: fixed; 
+        width: 200px; 
+        height: 60px;
+        background-color: white; 
+        border: 1px solid black; 
+        font-size: 20px;
+        justify-content: center ; 
+        display: flex; 
+        align-self: center; 
+        flex-direction: row;   
+        margin-left: 10%;
+        margin-top: 90%;
+        
+
+    }
+    .itemfoot{
+        width: 100%;
+        overflow: hidden;
+        height: 50px;
+    }
+    footer{
+        flex-direction: column;
+        height: 100%;
+    }
+    .menubutton{
+        display: none;
+    }
+    .item{
+        width: 100%;
+    }
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner {
+        padding-top: calc(50px + 2em);
+    }
+
+    .inner p {
+        margin: 0
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        
+        height: 70px;
+        font-size: 30px;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        border-bottom: 2px solid black;
+    }
+    main {
+        flex-direction: column;
+
+    }
+}

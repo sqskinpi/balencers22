@@ -25,7 +25,7 @@ $('#catalog').on('click', function(){
 $('#balencers').on('click', function(){
     window.location.href = 'index.html';
 });
-$('#user').on('click', function(){
+$('#usermain').on('click', function(){
     window.location.href = 'form.html';
 });
 
